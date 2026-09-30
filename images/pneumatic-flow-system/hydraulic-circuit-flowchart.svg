@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 860" role="img" aria-labelledby="title desc">
+  <title id="title">Hydraulic circuit for pneumatic microfluidic pump</title>
+  <desc id="desc">Compressor feeds a pressure regulator, then an open-close manifold, four flow-control valves, four pressure gauges, four cryovials, a cryovial manifold, and a microfluidic chip.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#f15a24"/>
+    </marker>
+    <style>
+      .bg { fill:#f8f7f2; }
+      .line { stroke:#f15a24; stroke-width:6; fill:none; marker-end:url(#arrow); stroke-linecap:round; stroke-linejoin:round; }
+      .branch { stroke:#f15a24; stroke-width:5; fill:none; marker-end:url(#arrow); stroke-linecap:round; stroke-linejoin:round; }
+      .box { stroke:#23364d; stroke-width:2; }
+      .label { font-family:Arial,Helvetica,sans-serif; fill:#111; font-size:34px; font-weight:700; text-anchor:middle; }
+      .small { font-family:Arial,Helvetica,sans-serif; fill:#111; font-size:24px; font-weight:700; text-anchor:middle; }
+      .white { fill:white; }
+      .orange { fill:#f2ad7c; }
+      .blue { fill:#5e9bd3; }
+      .gray { fill:#aaa6a8; }
+      .green { fill:#a8d78f; }
+      .reservoir { fill:#8bb9df; stroke:#23364d; stroke-width:2; }
+      .group { fill:#fff; stroke:#f15a24; stroke-width:3; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="860"/>
+
+  <text x="60" y="80" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700" fill="#111">Hydraulic circuit</text>
+
+  <rect class="box blue" x="70" y="205" rx="28" ry="28" width="220" height="140"/>
+  <text class="label white" x="180" y="287">Compressor</text>
+
+  <path class="line" d="M315 275 C420 275 445 190 570 190"/>
+
+  <rect class="box orange" x="590" y="125" width="250" height="130"/>
+  <text class="label white" x="715" y="180">Pressure</text>
+  <text class="label white" x="715" y="220">Regulator</text>
+
+  <path class="line" d="M865 190 C970 190 1015 140 1135 140"/>
+
+  <rect class="box gray" x="1160" y="85" rx="22" ry="22" width="320" height="120"/>
+  <text class="label white" x="1320" y="137">Open/Close</text>
+  <text class="label white" x="1320" y="177">Manifold</text>
+
+  <rect class="group" x="1090" y="285" rx="34" ry="34" width="420" height="205"/>
+  <text class="label" x="1300" y="330">Flow control valves</text>
+
+  <rect class="group" x="1110" y="575" rx="34" ry="34" width="390" height="150"/>
+  <text class="label" x="1305" y="615">Pressure Gauges</text>
+
+  <!-- manifold to 4 valve channels -->
+  <path class="branch" d="M1210 205 L1210 260 L1170 260 L1170 285"/>
+  <path class="branch" d="M1280 205 L1280 285"/>
+  <path class="branch" d="M1360 205 L1360 285"/>
+  <path class="branch" d="M1430 205 L1430 260 L1470 260 L1470 285"/>
+
+  <!-- valve symbols -->
+  <g transform="translate(1160 350)">
+    <polygon points="0,0 55,0 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <polygon points="0,90 55,90 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <text class="small white" x="28" y="66">1</text>
+  </g>
+  <g transform="translate(1255 350)">
+    <polygon points="0,0 55,0 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <polygon points="0,90 55,90 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <text class="small white" x="28" y="66">2</text>
+  </g>
+  <g transform="translate(1350 350)">
+    <polygon points="0,0 55,0 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <polygon points="0,90 55,90 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <text class="small white" x="28" y="66">3</text>
+  </g>
+  <g transform="translate(1445 350)">
+    <polygon points="0,0 55,0 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <polygon points="0,90 55,90 28,45" fill="#f7d57e" stroke="#23364d" stroke-width="2"/>
+    <text class="small white" x="28" y="66">4</text>
+  </g>
+
+  <!-- valves to gauges -->
+  <path class="branch" d="M1188 490 L1188 550 L1160 550 L1160 575"/>
+  <path class="branch" d="M1283 490 L1283 575"/>
+  <path class="branch" d="M1378 490 L1378 575"/>
+  <path class="branch" d="M1473 490 L1473 550 L1450 550 L1450 575"/>
+
+  <!-- gauges -->
+  <circle class="green box" cx="1160" cy="665" r="43"/>
+  <circle class="green box" cx="1255" cy="665" r="43"/>
+  <circle class="green box" cx="1350" cy="665" r="43"/>
+  <circle class="green box" cx="1445" cy="665" r="43"/>
+  <text class="label white" x="1160" y="678">1</text>
+  <text class="label white" x="1255" y="678">2</text>
+  <text class="label white" x="1350" y="678">3</text>
+  <text class="label white" x="1445" y="678">4</text>
+
+  <!-- reservoirs / manifold -->
+  <rect class="box gray" x="675" y="535" rx="22" ry="22" width="165" height="250"/>
+  <text class="label white" x="758" y="640">Cryovial</text>
+  <text class="label white" x="758" y="682">Manifold</text>
+
+  <rect class="reservoir" x="465" y="545" rx="8" ry="8" width="190" height="46"/>
+  <rect class="reservoir" x="465" y="610" rx="8" ry="8" width="190" height="46"/>
+  <rect class="reservoir" x="465" y="675" rx="8" ry="8" width="190" height="46"/>
+  <rect class="reservoir" x="465" y="740" rx="8" ry="8" width="190" height="46"/>
+  <text class="small white" x="560" y="576">Cryovial 1</text>
+  <text class="small white" x="560" y="641">Cryovial 2</text>
+  <text class="small white" x="560" y="706">Cryovial 3</text>
+  <text class="small white" x="560" y="771">Cryovial 4</text>
+
+  <!-- gauge lines back to manifold -->
+  <path class="branch" d="M1160 710 L1160 770 L880 770 L880 610 L840 610"/>
+  <path class="branch" d="M1255 710 L1255 790 L900 790 L900 655 L840 655"/>
+  <path class="branch" d="M1350 710 L1350 810 L920 810 L920 700 L840 700"/>
+  <path class="branch" d="M1445 710 L1445 830 L940 830 L940 745 L840 745"/>
+
+  <!-- manifold to cryovials -->
+  <path class="branch" d="M675 568 L655 568"/>
+  <path class="branch" d="M675 633 L655 633"/>
+  <path class="branch" d="M675 698 L655 698"/>
+  <path class="branch" d="M675 763 L655 763"/>
+
+  <!-- chip -->
+  <path d="M45 590 h205 v-20 h20 v20 h20 v150 h-20 v20 h-20 v-20 H45 v20 H25 v-20 H5 V590 h20 v-20 h20 z" fill="#7d7779" stroke="#23364d" stroke-width="2"/>
+  <text class="label white" x="150" y="655">Microfluidic</text>
+  <text class="label white" x="150" y="695">chip</text>
+
+  <!-- outlets from cryovials to chip -->
+  <path class="branch" d="M465 568 L350 568 L350 625 L290 625"/>
+  <path class="branch" d="M465 633 L330 633 L330 665 L290 665"/>
+
+  <text x="465" y="825" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#686868">Four independently controlled pneumatic channels feed individual fluid reservoirs before entering the microfluidic device.</text>
+</svg>
