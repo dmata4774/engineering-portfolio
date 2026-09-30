@@ -1,134 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | David Mata</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
-
-    <!-- NAVIGATION -->
-
-    <nav>
-
-        <a href="index.html" class="logo">
-            David <span>Mata</span>
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-
-    </nav>
-
-
-    <!-- MAIN CONTENT -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">David <span>Mata</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
 
     <main>
-
-        <section>
-
-            <div class="section-label">
-                Engineering Portfolio
-            </div>
-
-            <h1>
-                Projects
-            </h1>
-
-            <p class="section-intro">
-                Selected engineering projects demonstrating process design,
-                analysis, experimentation, controls, problem solving, and
-                hands-on technical development.
+        <section class="page-hero">
+            <div class="section-label">Engineering Portfolio</div>
+            <h1>Projects</h1>
+            <p class="lead">
+                A growing collection of engineering work across research, chemical engineering,
+                laboratory systems, CAD, prototyping, and hands-on design.
             </p>
-
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <div class="card-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Chemical Process Design
-                    </h3>
-
-                    <p>
-                        Process design projects involving chemical engineering
-                        fundamentals, equipment selection, process safety,
-                        material balances, and system optimization.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        02
-                    </div>
-
-                    <h3>
-                        Microfluidics & Flow Control
-                    </h3>
-
-                    <p>
-                        Experimental work involving fluid flow, pressure,
-                        pumping systems, flow resistance, instrumentation,
-                        and engineering analysis.
-                    </p>
-                     <a href="projects/pneumatic-flow-system.html" class="project-link">
-                         View Project →
-                     </a>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-number">
-                        03
-                    </div>
-
-                    <h3>
-                        Design & Prototyping
-                    </h3>
-
-                    <p>
-                        CAD, prototyping, mechanical design, fabrication,
-                        troubleshooting, and iterative development of
-                        engineering solutions.
-                    </p>
-
-                </div>
-
-            </div>
-
         </section>
 
+        <section class="editorial-section">
+            <div class="project-grid">
+                <article class="project-card featured">
+                    <div class="project-type">Research · Fluid Systems · CAD · Prototyping</div>
+                    <h3>Pneumatic Flow Control System</h3>
+                    <p>
+                        Designed and built a four-channel pneumatic liquid-delivery system for
+                        microfluidic research, progressing from an open proof-of-concept setup
+                        to an integrated enclosure with custom fabricated components.
+                    </p>
+                    <a href="projects/pneumatic-flow-system.html" class="project-link">View Case Study →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-type">CAD · Personal / Technical</div>
+                    <h3>Custom CAD & 3D-Printed Components</h3>
+                    <p>
+                        Mounts, risers, holders, adapters, enclosures, and practical components
+                        designed to solve specific fit, mounting, packaging, or usability problems.
+                    </p>
+                    <span class="project-link">Being documented</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-type">Chemical Engineering</div>
+                    <h3>Process Design & Safety Work</h3>
+                    <p>
+                        Process-design and safety-focused engineering work involving chemical
+                        systems, equipment evaluation, process hazards, and engineering analysis.
+                    </p>
+                    <span class="project-link">Being documented</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-type">Laboratory Engineering</div>
+                    <h3>Analytical & Reactor Systems</h3>
+                    <p>
+                        Hands-on work with laboratory reactors, gas chromatography, Karl Fischer
+                        titration, sampling, calibration, equipment troubleshooting, and workflow improvement.
+                    </p>
+                    <span class="project-link">Being documented</span>
+                </article>
+            </div>
+        </section>
     </main>
 
-
-    <!-- FOOTER -->
-
-    <footer>
-        © 2026 David Mata · Chemical Engineering Portfolio
-    </footer>
-
+    <footer>© 2026 David Mata · Chemical Engineering Portfolio</footer>
 </body>
-
 </html>
