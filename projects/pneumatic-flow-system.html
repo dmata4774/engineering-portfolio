@@ -3,31 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
           content="Engineering case study by David Mata: development of a pneumatic flow control system for microfluidic research.">
 
     <title>Pneumatic Flow Control System | David Mata</title>
-
-    <!--
-        This page is inside the /projects folder.
-        ../ means "go up one folder" before looking for /css.
-    -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
 <body>
 
-    <!-- =====================================================
-         NAVIGATION
-         ===================================================== -->
-
     <nav>
-
         <a href="../index.html" class="logo">
             David <span>Mata</span>
         </a>
@@ -39,30 +26,16 @@
             <li><a href="../skills.html">Skills</a></li>
             <li><a href="../about.html">About</a></li>
         </ul>
-
     </nav>
-
-
-    <!-- =====================================================
-         MAIN PROJECT CONTENT
-         ===================================================== -->
 
     <main class="project-page">
 
-
-        <!-- =================================================
-             PROJECT HERO
-             ================================================= -->
-
         <section class="project-hero">
-
             <div class="section-label">
                 Undergraduate Research · Engineering Design
             </div>
 
-            <h1>
-                Pneumatic Flow Control System
-            </h1>
+            <h1>Pneumatic Flow Control System</h1>
 
             <p class="project-summary">
                 Design and development of a four-channel pneumatic
@@ -71,31 +44,17 @@
                 with mechanically driven syringe pumps.
             </p>
 
-
-            <!-- Project skill tags -->
-
             <div class="project-tags">
-
                 <span>Fluid Mechanics</span>
                 <span>Microfluidics</span>
                 <span>Pneumatics</span>
                 <span>Onshape</span>
                 <span>3D Printing</span>
                 <span>Prototyping</span>
-
             </div>
-
         </section>
 
-
-
-        <!-- =================================================
-             HERO IMAGE
-             Prototype 2
-             ================================================= -->
-
         <section class="project-image-wide">
-
             <img
                 src="../images/pneumatic-flow-system/pump-prototype-2b.png"
                 alt="Second-generation pneumatic flow control system housed in a fabricated wooden enclosure">
@@ -103,24 +62,14 @@
             <p class="image-caption">
                 Second-generation pneumatic flow control system.
             </p>
-
         </section>
 
-
-
-        <!-- =================================================
-             01 — ENGINEERING PROBLEM
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
                 01 · Engineering Problem
             </div>
 
-            <h2>
-                Creating stable flow for microfluidic experiments
-            </h2>
+            <h2>Creating stable flow for microfluidic experiments</h2>
 
             <p>
                 Graduate researchers conducting microfluidic experiments
@@ -131,493 +80,223 @@
             </p>
 
             <p>
-                The objective of this project was to develop an alternative
-                fluid-delivery system using pneumatic pressure as the driving
-                force. The system needed to support independently adjustable
-                liquid streams while reducing the mechanically induced
-                oscillations observed with the existing syringe-pump setup.
+                The objective was to develop an alternative fluid-delivery
+                system using pneumatic pressure as the driving force while
+                supporting independently adjustable liquid streams.
             </p>
-
         </section>
 
-
-
-        <!-- =================================================
-             02 — SYSTEM ARCHITECTURE
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
-                02 · System Architecture
+                02 · System Design
             </div>
 
-            <h2>
-                Four independently controlled pneumatic channels
-            </h2>
+            <h2>Four independently controlled pneumatic channels</h2>
 
             <p>
-                A small air compressor supplied a primary pressure regulator.
-                The regulated air was routed through a manifold that divided
-                the pneumatic supply into four independently controlled
-                channels.
+                A small air compressor supplied a primary pressure regulator,
+                which fed a manifold dividing the pneumatic supply into four
+                independently controlled channels. Each channel incorporated
+                a pressure gauge, toggle valve and needle valve.
             </p>
 
             <p>
-                Each channel incorporated a pressure gauge, toggle valve and
-                needle valve. The controlled pneumatic supply was then routed
-                to liquid reservoirs, where air pressure provided the driving
-                force necessary to deliver liquid to the microfluidic device.
+                The controlled air supply was routed to liquid reservoirs,
+                where pneumatic pressure displaced the working fluid and
+                delivered it to the microfluidic device.
             </p>
-
-
-            <!--
-                This is a simple HTML representation of the
-                process flow. CSS will make it visually attractive later.
-            -->
 
             <div class="system-flow">
-
-                <div class="flow-step">
-                    Air Compressor
-                </div>
-
-                <div class="flow-arrow">
-                    ↓
-                </div>
-
-                <div class="flow-step">
-                    Primary Pressure Regulator
-                </div>
-
-                <div class="flow-arrow">
-                    ↓
-                </div>
-
-                <div class="flow-step">
-                    Four-Channel Manifold
-                </div>
-
-                <div class="flow-arrow">
-                    ↓
-                </div>
-
+                <div class="flow-step">Air Compressor</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Primary Pressure Regulator</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Four-Channel Manifold</div>
+                <div class="flow-arrow">↓</div>
                 <div class="flow-step">
                     Pressure Gauge + Toggle Valve + Needle Valve
                 </div>
-
-                <div class="flow-arrow">
-                    ↓
-                </div>
-
-                <div class="flow-step">
-                    Liquid Reservoir
-                </div>
-
-                <div class="flow-arrow">
-                    ↓
-                </div>
-
-                <div class="flow-step">
-                    Microfluidic Device
-                </div>
-
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Liquid Reservoir</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Microfluidic Device</div>
             </div>
-
         </section>
 
-
-
-        <!-- =================================================
-             03 — PROTOTYPE 1
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
-                03 · Proof of Concept
+                03 · Prototype Development
             </div>
 
-            <h2>
-                Prototype 1 — Open pegboard layout
-            </h2>
+            <h2>From open proof of concept to integrated enclosure</h2>
 
             <p>
-                The first prototype used an open pegboard arrangement to
-                establish component placement, assemble the pneumatic
-                architecture and evaluate the operating concept before
-                developing a more integrated system.
+                The first prototype used an open pegboard arrangement so the
+                pneumatic architecture and component placement could be
+                assembled, adjusted and tested with easy access to the
+                regulator, manifolds, valves, reservoirs and tubing.
             </p>
-
-            <p>
-                This configuration allowed the regulator, manifold, toggle
-                valves, needle valves, reservoirs and tubing to remain
-                accessible while the system was being assembled and tested.
-            </p>
-
 
             <div class="project-image-wide">
-
                 <img
                     src="../images/pneumatic-flow-system/pump-prototype-1.png"
                     alt="First pneumatic flow control system prototype assembled on a pegboard">
 
                 <p class="image-caption">
-                    First prototype used to develop and test the pneumatic
-                    architecture.
+                    Prototype 1 — open pegboard layout used to develop and
+                    test the pneumatic architecture.
                 </p>
-
             </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             04 — SECOND GENERATION
-             ================================================= -->
-
-        <section class="project-section">
-
-            <div class="section-label">
-                04 · Design Iteration
-            </div>
-
-            <h2>
-                Prototype 2 — Integrated enclosure
-            </h2>
 
             <p>
-                After establishing the basic operating concept, the system
-                was redesigned as an integrated enclosure. I developed the
-                complete enclosure and component layout in Onshape, including
-                mounting locations, openings, pass-throughs and internal
-                supports for the pneumatic and fluid-handling hardware.
+                After the operating concept was established, I redesigned
+                the system as an integrated enclosure in Onshape, including
+                component placement, mounting locations, pass-throughs and
+                internal supports.
             </p>
 
-
             <div class="project-image-grid">
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-cad-1.PNG"
                         alt="Onshape CAD model of the pneumatic flow control system enclosure">
-
-                    <figcaption>
-                        Enclosure CAD — View 1
-                    </figcaption>
-
+                    <figcaption>Integrated enclosure CAD — View 1</figcaption>
                 </figure>
 
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-cad-2.PNG"
                         alt="Alternate Onshape CAD view of the pneumatic flow control system enclosure">
-
-                    <figcaption>
-                        Enclosure CAD — View 2
-                    </figcaption>
-
+                    <figcaption>Integrated enclosure CAD — View 2</figcaption>
                 </figure>
-
             </div>
-
         </section>
 
-
-
-        <!-- =================================================
-             05 — DESIGN FOR MANUFACTURING
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
-                05 · Design for Manufacturing
+                04 · CAD, Fabrication & DFM
             </div>
 
-            <h2>
-                Selecting the appropriate fabrication method
-            </h2>
+            <h2>Choosing practical fabrication methods</h2>
 
             <p>
-                Although the enclosure was designed digitally as an integrated
-                structure, the available FDM printer did not have sufficient
-                build volume to manufacture the enclosure as a single piece.
+                The available FDM printer could not manufacture the enclosure
+                as a single piece. Rather than divide it into multiple printed
+                sections and introduce unnecessary structural joints, I
+                fabricated the primary enclosure from wood and reserved
+                additive manufacturing for specialized mounting hardware.
             </p>
-
-            <p>
-                Dividing the enclosure into multiple printed sections would
-                have introduced additional joints and unnecessary structural
-                complexity. Instead, I fabricated the primary enclosure from
-                wood while retaining additive manufacturing for specialized
-                mounting components where 3D printing provided a clear
-                advantage.
-            </p>
-
 
             <div class="project-image-grid">
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-prototype-2a.png"
                         alt="Second prototype pneumatic flow control system fabricated from wood">
-
-                    <figcaption>
-                        Fabricated second-generation enclosure
-                    </figcaption>
-
+                    <figcaption>Fabricated second-generation enclosure</figcaption>
                 </figure>
 
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-prototype-2b.png"
                         alt="Completed second-generation pneumatic flow control system">
-
-                    <figcaption>
-                        Completed system with installed components
-                    </figcaption>
-
+                    <figcaption>Completed system with installed components</figcaption>
                 </figure>
-
             </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             06 — CUSTOM CAD COMPONENTS
-             ================================================= -->
-
-        <section class="project-section">
-
-            <div class="section-label">
-                06 · CAD & Additive Manufacturing
-            </div>
-
-            <h2>
-                Custom component mounting
-            </h2>
 
             <p>
-                Off-the-shelf pneumatic hardware required custom mounting
-                solutions for integration into the enclosure. I modeled
-                purpose-built risers and supports in Onshape and manufactured
-                them using FDM 3D printing.
+                Custom mounts and risers were modeled in Onshape and FDM
+                printed to integrate off-the-shelf pneumatic components into
+                the enclosure.
             </p>
 
-
             <div class="project-image-grid">
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/needle-valve-riser.png"
                         alt="Onshape CAD model of custom multi-position needle valve riser">
-
-                    <figcaption>
-                        Multi-position needle valve riser
-                    </figcaption>
-
+                    <figcaption>Multi-position needle valve riser</figcaption>
                 </figure>
 
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/manifold-riser.png"
                         alt="Onshape CAD model of custom manifold riser">
-
-                    <figcaption>
-                        Custom manifold riser
-                    </figcaption>
-
+                    <figcaption>Custom manifold riser</figcaption>
                 </figure>
-
             </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             07 — ADDITIONAL CAD DEVELOPMENT
-             ================================================= -->
-
-        <section class="project-section">
-
-            <div class="section-label">
-                07 · CAD Development
-            </div>
-
-            <h2>
-                Component integration and packaging
-            </h2>
-
-            <p>
-                Additional CAD development was used to evaluate component
-                placement, mounting geometry and packaging before fabrication.
-                This allowed the physical arrangement of the system to be
-                considered before committing to the final enclosure.
-            </p>
-
 
             <div class="project-image-grid">
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-cad-3.PNG"
                         alt="Detailed CAD model developed for the pneumatic flow control system">
-
-                    <figcaption>
-                        Component mounting detail
-                    </figcaption>
-
+                    <figcaption>Component mounting detail</figcaption>
                 </figure>
 
-
                 <figure>
-
                     <img
                         src="../images/pneumatic-flow-system/pump-cad-4.PNG"
                         alt="Additional CAD model developed for the pneumatic flow control system">
-
-                    <figcaption>
-                        System integration detail
-                    </figcaption>
-
+                    <figcaption>System integration detail</figcaption>
                 </figure>
-
             </div>
-
         </section>
 
-
-
-        <!-- =================================================
-             08 — TESTING
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
-                08 · Testing & Validation
+                05 · Testing & Experimental Integration
             </div>
 
-            <h2>
-                Evaluating flow stability
-            </h2>
+            <h2>Evaluating flow stability</h2>
 
             <p>
                 Average liquid flow rate was evaluated gravimetrically by
-                collecting the effluent over a measured time interval and
-                determining the corresponding mass flow.
+                collecting effluent over a measured time interval. Dynamic
+                behavior was evaluated visually using two differently colored
+                water streams inside the microfluidic channel.
             </p>
 
             <p>
-                Dynamic behavior was evaluated visually using two
-                differently colored water streams inside the microfluidic
-                channel. With the mechanical syringe-pump setup, the
-                interface between the streams visibly moved back and forth
-                as the flow oscillated.
+                With the mechanical syringe-pump setup, the interface between
+                the streams visibly moved back and forth as the flow
+                oscillated. Under pneumatic operation, the interface remained
+                visually stable, and its position could be shifted by
+                adjusting the relative inlet pressures.
             </p>
-
-            <p>
-                Under pneumatic operation, the interface remained visually
-                stable. Adjusting the relative pressure supplied to each
-                inlet also allowed the interface position to be shifted
-                within the channel.
-            </p>
-
-
-            <!--
-                This note deliberately separates what was observed
-                from what was quantitatively measured.
-            -->
 
             <div class="project-note">
-
                 <strong>Measurement limitation:</strong>
-
                 Instantaneous flow was not instrumented with a flow meter.
-                The reduction in oscillation was therefore evaluated
-                qualitatively through observation of the fluid interface
-                rather than reported as a quantitative pulsation measurement.
-
+                The reduction in oscillation is therefore reported
+                qualitatively from observation of the fluid interface rather
+                than as a quantitative pulsation measurement.
             </div>
 
-
             <div class="project-image-wide">
-
                 <img
                     src="../images/pneumatic-flow-system/laminar-flow-test.png"
                     alt="Stable interface between blue and yellow water streams during microfluidic testing">
 
                 <p class="image-caption">
-                    Food-colored water was used to visualize the interface
-                    between independently controlled liquid streams.
+                    Food-colored water used to visualize the interface between
+                    independently controlled liquid streams.
                 </p>
-
             </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             09 — MICROFLUIDIC INTERFACE
-             ================================================= -->
-
-        <section class="project-section">
-
-            <div class="section-label">
-                09 · Experimental Integration
-            </div>
-
-            <h2>
-                Adapting the microfluidic hardware
-            </h2>
 
             <p>
                 The SLA-printed microfluidic device originated from an
-                existing research design and was not originally designed
-                by me. I modified the inlet geometry to improve tubing fit
-                and sealing for integration with the pneumatic delivery
-                system.
+                existing research design. I modified the inlet geometry to
+                improve tubing fit and sealing for integration with the
+                pneumatic delivery system.
             </p>
-
-            <p>
-                This allowed the existing research hardware to interface
-                more reliably with the newly developed fluid-delivery
-                system without representing the underlying microfluidic
-                device as an original design.
-            </p>
-
         </section>
 
-
-
-        <!-- =================================================
-             10 — MY ROLE
-             ================================================= -->
-
         <section class="project-section">
-
             <div class="section-label">
-                10 · My Role
+                06 · My Role & Outcome
             </div>
 
-            <h2>
-                Independent undergraduate engineering project
-            </h2>
+            <h2>Independent undergraduate engineering project</h2>
 
             <p>
                 I completed the pump development as an individual
@@ -626,38 +305,30 @@
                 microfluidic systems.
             </p>
 
-
             <div class="contribution-list">
-
                 <div>
                     <strong>System Design</strong>
                     <span>
-                        Developed the pneumatic fluid-delivery architecture
+                        Developed the pneumatic liquid-delivery architecture
                         and four-channel control configuration.
                     </span>
                 </div>
 
                 <div>
-                    <strong>CAD</strong>
+                    <strong>CAD & DFM</strong>
                     <span>
-                        Designed the enclosure, component layout, risers
-                        and mounting hardware in Onshape.
+                        Designed the enclosure, component layout, risers and
+                        mounting hardware in Onshape and selected practical
+                        fabrication methods.
                     </span>
                 </div>
 
                 <div>
-                    <strong>Fabrication</strong>
+                    <strong>Fabrication & Assembly</strong>
                     <span>
-                        Produced custom FDM components and fabricated the
-                        second-generation enclosure.
-                    </span>
-                </div>
-
-                <div>
-                    <strong>Assembly</strong>
-                    <span>
-                        Integrated pneumatic, fluid-handling and mechanical
-                        components into the completed system.
+                        Produced custom FDM components, fabricated the
+                        enclosure and integrated the pneumatic,
+                        fluid-handling and mechanical hardware.
                     </span>
                 </div>
 
@@ -665,7 +336,7 @@
                     <strong>Testing</strong>
                     <span>
                         Evaluated average flow gravimetrically and assessed
-                        dynamic flow behavior using a visible fluid interface.
+                        dynamic behavior using a visible fluid interface.
                     </span>
                 </div>
 
@@ -676,65 +347,25 @@
                         improved tubing fit and sealing.
                     </span>
                 </div>
-
             </div>
 
-        </section>
-
-
-
-        <!-- =================================================
-             PROJECT OUTCOME
-             ================================================= -->
-
-        <section class="project-section project-conclusion">
-
-            <div class="section-label">
-                Project Outcome
-            </div>
-
-            <h2>
-                From research limitation to engineered prototype
-            </h2>
-
             <p>
-                The project produced a pneumatically driven,
-                independently adjustable fluid-delivery platform that
-                provided a visibly stable fluid interface during
-                microfluidic testing.
+                The completed platform provided independently adjustable
+                pneumatic liquid delivery and a visibly stable fluid interface
+                during microfluidic testing. The project combined fluid
+                mechanics, pneumatic control, CAD, prototyping, fabrication
+                and experimental validation in one iterative engineering
+                workflow.
             </p>
-
-            <p>
-                More broadly, the project required translating a research
-                limitation into an engineering system through fluid
-                mechanics, pneumatic control, CAD, prototyping, fabrication,
-                experimental testing and iterative design.
-            </p>
-
         </section>
-
-
-
-        <!-- =================================================
-             RETURN TO PROJECT PORTFOLIO
-             ================================================= -->
 
         <section class="project-back">
-
             <a href="../projects.html">
                 ← Back to Project Portfolio
             </a>
-
         </section>
 
-
     </main>
-
-
-
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
 
     <footer>
         © 2026 David Mata · Chemical Engineering Portfolio
