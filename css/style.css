@@ -254,247 +254,342 @@
                 padding: 70px 7%;
             }
         }
+
         /* ==========================================================
-   PROJECT CASE STUDY PAGES
-   ========================================================== */
+           PROJECT CASE STUDY PAGES
+           ========================================================== */
 
-.project-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 32px 100px;
-}
+        .project-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 32px 80px;
+        }
 
+        /* ---------- Project Hero ---------- */
 
-/* ---------- Project Hero ---------- */
+        .project-hero {
+            padding: 40px 0 50px;
+            max-width: 950px;
+        }
 
-.project-hero {
-    padding: 50px 0 70px;
-    max-width: 950px;
-}
+        .project-hero h1 {
+            font-size: clamp(3rem, 7vw, 6rem);
+            line-height: 1;
+            margin: 20px 0 26px;
+            letter-spacing: -0.04em;
+        }
 
-.project-hero h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
-    line-height: 1;
-    margin: 20px 0 30px;
-    letter-spacing: -0.04em;
-}
+        .project-summary {
+            max-width: 800px;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: #aab6c3;
+        }
 
-.project-summary {
-    max-width: 800px;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: #aab6c3;
-}
+        /* ---------- Technology Tags ---------- */
 
-.section-label {
-    color: #59b4ff;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 26px;
+        }
 
+        .project-tags span {
+            border: 1px solid #263746;
+            background: #101a23;
+            border-radius: 100px;
+            padding: 8px 14px;
+            font-size: 0.85rem;
+            color: #c4ced8;
+        }
 
-/* ---------- Technology Tags ---------- */
+        /* ---------- Project Sections ---------- */
 
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-}
+        .project-section {
+            padding: 50px 0;
+            border-top: 1px solid #22303c;
+        }
 
-.project-tags span {
-    border: 1px solid #263746;
-    background: #101a23;
-    border-radius: 100px;
-    padding: 8px 14px;
-    font-size: 0.85rem;
-    color: #c4ced8;
-}
+        .project-section h2 {
+            max-width: 800px;
+            margin: 15px 0 20px;
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
 
+        .project-section > p {
+            max-width: 800px;
+            color: #aab6c3;
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
 
-/* ---------- Project Sections ---------- */
+        /* ---------- Images ---------- */
 
-.project-section {
-    padding: 80px 0;
-    border-top: 1px solid #22303c;
-}
+        .project-image-wide {
+            margin: 28px 0 36px;
+            max-width: 850px;
+            padding: 0;
+        }
 
-.project-section h2 {
-    max-width: 800px;
-    margin: 15px 0 25px;
-    font-size: 2.2rem;
-    line-height: 1.2;
-}
+        .project-image-wide img {
+            display: block;
+            width: 100%;
+            max-height: 550px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #111a22;
+        }
 
-.project-section > p {
-    max-width: 800px;
-    color: #aab6c3;
-    font-size: 1.05rem;
-    line-height: 1.8;
-}
+        .image-caption,
+        .project-image-grid figcaption {
+            margin-top: 10px;
+            color: #778797;
+            font-size: 0.85rem;
+        }
 
+        .project-image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 28px;
+            margin-bottom: 4px;
+            max-width: 900px;
+        }
 
-/* ---------- Images ---------- */
+        .project-image-grid figure {
+            margin: 0;
+        }
 
-.project-image-wide {
-    margin: 40px 0 70px;
-    max-width: 850px;
-}
+        .project-image-grid img {
+            display: block;
+            width: 100%;
+            height: 340px;
+            object-fit: contain;
+            background: #111a22;
+            border-radius: 8px;
+        }
 
-.project-image-wide img {
-    display: block;
-    width: 100%;
-    max-height: 550px;
-    object-fit: contain;
-    border-radius: 8px;
-    background: #111a22;
-}
+        /* ---------- System Flow Diagram ---------- */
 
-.image-caption,
-.project-image-grid figcaption {
-    margin-top: 12px;
-    color: #778797;
-    font-size: 0.85rem;
-}
+        .system-flow {
+            max-width: 650px;
+            margin: 36px 0 10px;
+        }
 
-.project-image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 40px;
-    max-width: 900px;
-}
+        .flow-step {
+            padding: 18px 22px;
+            background: #101a23;
+            border: 1px solid #263746;
+            border-radius: 6px;
+            font-weight: 600;
+        }
 
-.project-image-grid figure {
-    margin: 0;
-}
+        .flow-arrow {
+            padding: 8px 20px;
+            color: #59b4ff;
+            font-size: 1.4rem;
+        }
 
-.project-image-grid img {
-    display: block;
-    width: 100%;
-    height: 340px;
+        /* ---------- Engineering Note ---------- */
 
+        .project-note {
+            max-width: 800px;
+            margin: 28px 0;
+            padding: 24px;
+            border-left: 3px solid #59b4ff;
+            background: #101a23;
+            color: #aab6c3;
+            line-height: 1.7;
+        }
 
-/* ---------- System Flow Diagram ---------- */
+        .project-note strong {
+            color: #e6edf3;
+        }
 
-.system-flow {
-    max-width: 650px;
-    margin: 50px 0;
-}
+        /* ---------- Contribution / Role List ---------- */
 
-.flow-step {
-    padding: 18px 22px;
-    background: #101a23;
-    border: 1px solid #263746;
-    border-radius: 6px;
-    font-weight: 600;
-}
+        .contribution-list {
+            max-width: 900px;
+            margin-top: 28px;
+        }
 
-.flow-arrow {
-    padding: 8px 20px;
-    color: #59b4ff;
-    font-size: 1.4rem;
-}
+        .contribution-list > div {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 30px;
+            padding: 18px 0;
+            border-bottom: 1px solid #22303c;
+        }
 
+        .contribution-list strong {
+            color: #e6edf3;
+        }
 
-/* ---------- Engineering Note ---------- */
+        .contribution-list span {
+            color: #aab6c3;
+            line-height: 1.6;
+        }
 
-.project-note {
-    max-width: 800px;
-    margin: 35px 0;
-    padding: 24px;
-    border-left: 3px solid #59b4ff;
-    background: #101a23;
-    color: #aab6c3;
-    line-height: 1.7;
-}
+        /* ---------- Project Conclusion ---------- */
 
-.project-note strong {
-    color: #e6edf3;
-}
+        .project-conclusion {
+            margin-top: 20px;
+        }
 
+        .project-back {
+            padding: 36px 0;
+            border-top: 1px solid #22303c;
+        }
 
-/* ---------- Contribution / Role List ---------- */
+        .project-back a,
+        .project-link {
+            color: #59b4ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-.contribution-list {
-    max-width: 900px;
-    margin-top: 40px;
-}
+        .project-back a:hover,
+        .project-link:hover {
+            text-decoration: underline;
+        }
 
-.contribution-list > div {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 30px;
-    padding: 22px 0;
-    border-bottom: 1px solid #22303c;
-}
+        /* ==========================================================
+           LIGHT COLOR EXPERIMENT
+           Temporary palette test: baby blue background + navy text
+           ========================================================== */
 
-.contribution-list strong {
-    color: #e6edf3;
-}
+        body {
+            background: #8fcfff;
+            color: #0b141d;
+        }
 
-.contribution-list span {
-    color: #aab6c3;
-    line-height: 1.6;
-}
+        nav {
+            background: rgba(143, 207, 255, 0.96);
+            border-bottom-color: #16324a;
+        }
 
+        nav a,
+        .nav-links a,
+        .logo {
+            color: #0b141d;
+        }
 
-/* ---------- Project Conclusion ---------- */
+        .logo span,
+        .nav-links a:hover {
+            color: #16324a;
+        }
 
-.project-conclusion {
-    margin-top: 30px;
-}
+        .project-hero h1,
+        .project-section h2 {
+            color: #0b141d;
+        }
 
-.project-back {
-    padding: 50px 0;
-    border-top: 1px solid #22303c;
-}
+        .project-summary,
+        .project-section > p {
+            color: #16324a;
+        }
 
-.project-back a,
-.project-link {
-    color: #59b4ff;
-    text-decoration: none;
-    font-weight: 600;
-}
+        .section-label {
+            color: #0b2a43;
+        }
 
-.project-back a:hover,
-.project-link:hover {
-    text-decoration: underline;
-}
+        .project-tags span {
+            background: #16324a;
+            border-color: #16324a;
+            color: #8fcfff;
+        }
 
+        .flow-step {
+            background: #16324a;
+            border-color: #16324a;
+            color: #eaf6ff;
+        }
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+        .flow-arrow {
+            color: #16324a;
+        }
 
-@media (max-width: 750px) {
+        .project-note {
+            background: #16324a;
+            border-left-color: #0b141d;
+            color: #d8edff;
+        }
 
-    .project-page {
-        padding: 30px 20px 70px;
-    }
+        .project-note strong {
+            color: #ffffff;
+        }
 
-    .project-hero {
-        padding: 35px 0 50px;
-    }
+        .contribution-list > div {
+            border-bottom-color: rgba(11, 20, 29, 0.25);
+        }
 
-    .project-section {
-        padding: 55px 0;
-    }
+        .contribution-list strong {
+            color: #0b141d;
+        }
 
-    .project-image-grid {
-        grid-template-columns: 1fr;
-    }
+        .contribution-list span {
+            color: #16324a;
+        }
 
-    .project-image-grid img {
-        height: auto;
-        max-height: 500px;
-    }
+        .project-section,
+        .project-back {
+            border-color: rgba(11, 20, 29, 0.25);
+        }
 
-    .contribution-list > div {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-}
+        .project-back a,
+        .project-link {
+            color: #0b2a43;
+        }
+
+        .project-image-wide img,
+        .project-image-grid img {
+            background: #16324a;
+        }
+
+        .image-caption,
+        .project-image-grid figcaption {
+            color: #244a68;
+        }
+
+        footer {
+            background: #16324a;
+            color: #d8edff;
+            border-top-color: #16324a;
+        }
+
+        /* ==========================================================
+           MOBILE
+           ========================================================== */
+
+        @media (max-width: 750px) {
+
+            .project-page {
+                padding: 30px 20px 60px;
+            }
+
+            .project-hero {
+                padding: 30px 0 42px;
+            }
+
+            .project-section {
+                padding: 42px 0;
+            }
+
+            .project-image-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-image-grid img {
+                height: auto;
+                max-height: 500px;
+            }
+
+            .contribution-list > div {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
     </style>
