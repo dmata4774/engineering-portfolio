@@ -345,6 +345,21 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
     transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
+
+.project-card-thumb {
+    display: block;
+    width: calc(100% + 56px);
+    height: 190px;
+    margin: -28px -28px 22px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--line);
+    background: var(--soft);
+}
+
+.project-card.featured .project-card-thumb {
+    height: 300px;
+}
+
 .project-card:hover,
 .card:hover {
     transform: translateY(-3px);
@@ -599,6 +614,13 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
     margin: 28px 0 8px;
 }
 
+.project-video-side {
+    max-width: 390px;
+    margin: 0;
+    align-self: center;
+    justify-self: end;
+}
+
 .project-video {
     display: block;
     width: 100%;
@@ -740,6 +762,17 @@ footer {
 
     .project-side-image {
         max-width: 620px;
+    }
+
+    .project-video-side {
+        max-width: 620px;
+        width: 100%;
+        justify-self: start;
+    }
+
+    .project-card.featured .project-card-thumb,
+    .project-card-thumb {
+        height: 210px;
     }
 
     .project-image-grid img {
