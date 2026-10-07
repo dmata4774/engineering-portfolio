@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Mata's independent dual-reactor laboratory system: pressure-system component selection, two-vessel sampling, and a revised P&amp;ID.">
+    <title>Independent Dual-Reactor System | David Mata</title>
+    <link rel="stylesheet" href="../../css/style.css?v=20261006-1">
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="../../index.html" class="logo">David <span>Mata</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../experience.html">Experience</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../skills.html">Skills</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <section class="project-hero">
+            <div class="section-label">Chemical Engineering · Reactor Systems · Process Design</div>
+            <h1>Independent Dual-Reactor System</h1>
+            <p class="project-summary">
+                Built a two-reactor experimental system within a fume hood, reconfiguring
+                a reference setup from reactors in series to two independently operated
+                reactor lines capable of running experiments simultaneously.
+            </p>
+            <div class="project-tags">
+                <span>P&amp;ID Development</span>
+                <span>Pressure-System Design</span>
+                <span>Parallel Experiments</span>
+                <span>Sampling Architecture</span>
+                <span>Equipment Integration</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">01 · Engineering Challenge</div>
+            <h2>Adapting an existing design to a different process</h2>
+            <p>
+                The new laboratory required equipment suited to different chemistry and
+                operating requirements than an existing setup elsewhere in the facility.
+                The reference design connected two reactors in series. For the new
+                experimental program, I redesigned the configuration around independently
+                operated reactors and drew a new piping and instrumentation diagram (P&amp;ID).
+            </p>
+            <p>
+                The primary design objective was to let two experiments proceed at the
+                same time without requiring the reactors to run sequentially.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">02 · System Architecture</div>
+            <h2>Two independently operated reactor lines</h2>
+            <p>
+                Each reactor was configured as an independent experimental system,
+                with its own pressure-related hardware and sampling provisions.
+                The reactors were installed as part of a two-reactor setup in a fume hood.
+                This architecture provided flexibility to operate two separate experiments
+                concurrently.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">03 · Pressure-System Components</div>
+            <h2>Component selection for the expected operating range</h2>
+            <p>
+                The expected operating pressures were approximately 200–400 psi. Pressure
+                gauges, relief devices, and upstream/downstream pressure regulators were
+                selected with that range in mind.
+            </p>
+            <div class="contribution-list">
+                <div><strong>Operating Range</strong><span>Approximately 200–400 psi</span></div>
+                <div><strong>Pressure Gauges</strong><span>Selected with a 0–600 psi measurement range</span></div>
+                <div><strong>Relief Valves</strong><span>Reported 500 psi rating; relief set pressures and design verification are not detailed here</span></div>
+                <div><strong>Pressure Regulators</strong><span>Front and back pressure regulators rated up to 500 psi</span></div>
+            </div>
+            <p>
+                These values describe the equipment selections for the project; they are not
+                a substitute for a complete pressure-system design or relief-device assessment.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">04 · Sampling Design</div>
+            <h2>Dual sample vessels for each reactor</h2>
+            <p>
+                Each reactor was equipped with two sample vessels: one 150 mL and one
+                1,000 mL. The larger vessel was selected to support experiments with
+                longer run durations.
+            </p>
+            <p>
+                Having two vessels available on each reactor also allowed experiments
+                to continue while a sample was collected from one vessel, reducing the
+                interruption associated with sampling.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">05 · Process Documentation</div>
+            <h2>Revised piping &amp; instrumentation diagram</h2>
+            <p>
+                I developed a new P&amp;ID for the independent-reactor configuration
+                rather than reusing the original series-layout drawing. The diagram
+                documents the system configuration and the associated instrumentation.
+            </p>
+            <figure class="project-document">
+                <iframe
+                    src="../../images/dual-reactor-system/2-reactor-P&ID.pdf#view=FitH"
+                    title="Dual-reactor system piping and instrumentation diagram (PDF)"
+                    loading="lazy"></iframe>
+                <figcaption>
+                    Two-reactor system P&amp;ID.
+                    <a href="../../images/dual-reactor-system/2-reactor-P&ID.pdf" target="_blank" rel="noopener noreferrer">Open full-size PDF ↗</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <div class="section-label">06 · Controls Integration</div>
+            <h2>Connecting the reactors to the electronic control box</h2>
+            <p>
+                The reactor system was operated alongside a purpose-built electronic
+                control enclosure that powers the heaters, mass flow controllers for
+                gas delivery, and feedstock pumps. It also integrates PID temperature
+                regulation and a separate high-temperature global shutdown function.
+            </p>
+            <p>
+                The electrical architecture, enclosure assembly, and hinged PID-access
+                improvement are documented separately in the
+                <a class="project-inline-link" href="../electronic-control-box/">Electronic Control Box case study ↗</a>.
+            </p>
+        </section>
+
+        <section class="project-back">
+            <a href="../../projects.html">← Back to Project Portfolio</a>
+        </section>
+    </main>
+
+    <footer>© 2026 David Mata · Chemical Engineering Portfolio</footer>
+</body>
+</html>
