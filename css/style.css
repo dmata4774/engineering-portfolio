@@ -607,6 +607,37 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
 
 
 
+/* ---------- EMBEDDED PROJECT DOCUMENTS ---------- */
+
+.project-document {
+    width: 100%;
+    max-width: 980px;
+    margin: 24px 0 20px;
+}
+
+.project-document iframe {
+    display: block;
+    width: 100%;
+    height: min(65vw, 640px);
+    min-height: 360px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.project-document figcaption {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+
+.project-document figcaption a {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* ---------- PROJECT VIDEO ---------- */
 
 .project-video-wrap {
