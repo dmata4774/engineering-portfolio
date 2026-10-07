@@ -638,6 +638,47 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
     text-underline-offset: 3px;
 }
 
+
+/* ---------- INLINE ENGINEERING DIAGRAMS ---------- */
+
+.project-diagram {
+    width: 100%;
+    max-width: 1080px;
+    margin: 28px 0 18px;
+}
+
+.project-diagram > a {
+    display: block;
+    border: 1px solid var(--line);
+    background: var(--surface);
+}
+
+.project-diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-diagram figcaption {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+
+.project-diagram figcaption a,
+.project-inline-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 650;
+}
+
+.project-photo-wide {
+    margin-top: 24px;
+}
+
 /* ---------- PROJECT VIDEO ---------- */
 
 .project-video-wrap {
