@@ -356,9 +356,6 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
     background: var(--soft);
 }
 
-.project-card.featured .project-card-thumb {
-    height: 300px;
-}
 
 .project-card:hover,
 .card:hover {
@@ -366,13 +363,6 @@ main > section:not(.hero):not(.project-hero):not(.project-image-wide):not(.proje
     border-color: #aba69d;
 }
 
-.project-card.featured {
-    grid-column: span 2;
-    min-height: 360px;
-    background:
-        linear-gradient(rgba(17,17,17,0.06), rgba(17,17,17,0.06)),
-        var(--surface);
-}
 
 .project-type,
 .card-number {
@@ -819,10 +809,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .project-card.featured {
-        grid-column: auto;
-    }
-
     .experience-row {
         gap: 10px;
     }
@@ -842,7 +828,6 @@ footer {
         justify-self: start;
     }
 
-    .project-card.featured .project-card-thumb,
     .project-card-thumb {
         height: 210px;
     }
